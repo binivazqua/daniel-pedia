@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <!-- IMPORT A STYLESHEET-->
+    <link href = "test-style.css" rel = "stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+<section id = "overlay"> 
+    <!-- create a SUBMITABLE FORM-->
+    <form action = "submission.html" method = "POST">
+        <h1> Do you <emp>really</emp> like him? 👀🫵 </h1>
+        <hr>
+    <section class = "bio">
+            <span> What is Daniel Caesar's real
+                name?
+            </span> 
+            <br> <!-- LINE BREAK ELEMENT-->
+
+            <input type = "radio" name = "james" value = "james simmonds">
+            <label for = "james"> James Simmonds </label>
+
+            <br>
+
+            <input type = "radio" name = "jordan" value = "jordan simmonds">
+            <label for = "jordan"> Jordan Simmonds </label>
+
+            <br>
+            <input type = "radio" name = "ashton" value = "ashton simmonds"> 
+            <label for = "ashton"> Ashton Simmonds </label>
+
+        <section class = "daniel_fans">
+            <hr> 
+            <label for = "fans"> Write the name of #1 Daniel Caesar's fan: </label>
+            <input type = "text" list = "fans" id = "fans" name = "fans">
+            <!-- DATALIST IS USED TO KEEP ALL POSSIBLE OPTIONS CONTAINED-->
+                <datalist id = "fans">
+                    <option value = "barack obama"></option>
+                    <option value = "elton john"></option>
+                    <option value = "frank sinatra"></option>
+                </datalist>
+        </section>
+
+        <section class = "daniel_was"></section>
+            <hr>
+            <label for = "hewas"> When Daniel was 17, he was: </label>
+            <select id="hewas" name= "hewas" > <!-- DOESN'T NEED A LIST ATTRIBUTE-->
+                <option value = "billionarie"> billionarie </option>
+                <option value = "severely ill"> severely ill </option>
+                <option value = "homeless"> homeless </option>
+            </select>
+
+        <hr>
+
+        <section class = "daniel_referents">
+            <label for = "referents"> Who of the following are some of his referents?</label>
+            <!-- INPUTS SHOULD HAVE: id, name, value and type-->
+                <input type = "checkbox" value = "alicia keys" id = "alicia keys" name = "alicia keys">
+                <label for = "alicia keys"> Alicia Keys </label>
+
+                <input type = "checkbox" name = "frank ocean" id = "frank ocean" value = "frank ocean">
+                <label for = "frank ocean">Frank Ocean</label>
+
+                <input type = "checkbox" name = "kanye west" id = "kanye west" value = "kanye west">
+                <label for = "kanye west">Kanye West</label>
+
+                <input type = "checkbox" name = "beyonce" id = "beyonce" value = "beyonce">
+                <label for = "beyonce">Beyonce</label>
+        </section>
+
+        <hr>
+
+        <!-- CREATING A TEXT AREA -->
+        <section class = "extra_info">
+            <label for = "moreinfo"> Please narrate the most wholesome experience you've had 
+                with Daniel's music playing in the back </label>
+                <br>
+                <br>
+                <textarea name ="moreinfo" id = "moreinfo" rows = "5" cols = "20" minlength="5" maxlength="150"> Write here... </textarea>
+
+        </section>
+
+        <!--CREATE A SUBMISSION BUTTON-->
+        <section class = "submission">
+
+            <input type = "submit" value = "Go">
+
+        </section>
+
+
+
+    </section>
+
+
+   </form>
+</section>
+
+
+</body>
+</html>
